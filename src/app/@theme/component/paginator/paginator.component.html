@@ -1,0 +1,15 @@
+<div class="custom-paginator pt-4">
+    <button  class="btn btn-primary mr-1" [disabled]="hasPreviousPage"(click)="goFirstPage()">
+        <i class="fa fa-backward" aria-hidden="true"></i>
+    </button>
+    <button  class="btn btn-primary mr-1">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+    </button>
+    <p class="paginator-page">1/1</p>
+    <button  class="btn btn-primary mr-1">
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+    </button>
+    <button  class="btn btn-primary mr-1"[disabled]="hasNextPage"(click)="goLastPage()">
+        <i class="fa fa-forward" aria-hidden="true"></i>
+    </button>
+</div>
